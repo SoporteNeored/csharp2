@@ -300,7 +300,7 @@ Class | Method | HTTP request | Description
 
 
 <a name="documentation-for-authorization"></a>
-## Documentation for Authorization
+## Documentación para autorización
 
 <a name="apikey"></a>
 ### apikey

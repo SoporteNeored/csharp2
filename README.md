@@ -6,7 +6,7 @@ Cada llamada API se establece en qué tipo de solicitud específica (GET, POST, 
 
 La API tiene un límite de 20 conexiones simultáneas y un tiempo de espera de 600 segundos por solicitud.
 
-Para comenzar a utilizar esta API, necesitará su token de acceso(disponible [aqui](https://app.NeoRed.com/marketing/settings/new/manage-api)). Recuerde guardar esto muy bien. Los niveles de acceso requeridos se enumeran en la descripción de la solicitud dada.
+Para comenzar a utilizar esta API, necesitará su token de acceso(disponible [aqui](https://panel.neosmtp.com/api/)). Recuerde guardar esto muy bien. Los niveles de acceso requeridos se enumeran en la descripción de la solicitud dada.
 
 Todos los repositorios de nuestra libreria son descargables se pueden encontrar en nuestro repositorio de Github [here](https://github.com/NeoRed?tab=repositories&q=%22rest+api%22+in%3Areadme)
 

@@ -47,9 +47,9 @@ Generate the DLL using your preferred tool (e.g. `dotnet build`)
 
 Luego incluya la DLL (en la carpeta `bin`) en el proyecto C# y use los espacios de nombres:
 ```csharp
-using NeoRed.Api;
-using NeoRed.Client;
-using NeoRed.Model;
+using ElasticEmail.Api;
+using ElasticEmail.Client;
+using ElasticEmail.Model;
 ```
 <a name="usage"></a>
 ## Usage
@@ -68,9 +68,9 @@ c.Proxy = webProxy;
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using NeoRed.Api;
-using NeoRed.Client;
-using NeoRed.Model;
+using ElasticEmail.Api;
+using ElasticEmail.Client;
+using ElasticEmail.Model;
 
 namespace Example
 {

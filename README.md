@@ -8,7 +8,7 @@ La API tiene un límite de 20 conexiones simultáneas y un tiempo de espera de 6
 
 Para comenzar a utilizar esta API, necesitará su token de acceso(disponible [aqui](https://panel.neosmtp.com/api/)). Recuerde guardar esto muy bien. Los niveles de acceso requeridos se enumeran en la descripción de la solicitud dada.
 
-Todos los repositorios de nuestra libreria son descargables se pueden encontrar en nuestro repositorio de Github [here](https://github.com/NeoRed?tab=repositories&q=%22rest+api%22+in%3Areadme)
+Todos los repositorios de nuestra libreria son descargables se pueden encontrar en nuestro repositorio de Github [aqui](https://github.com/SoporteNeored/)
 
 Este SDK de C# lo genera automáticamente el proyecto [OpenAPI Generator](https://openapi-generator.tech) project:
 

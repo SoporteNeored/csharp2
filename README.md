@@ -113,7 +113,7 @@ Todos los URI son relativos
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*CampaignsApi* | [**CampaignsByNameDelete**](docs/CampaignsApi.md#campaignsbynamedelete) | **DELETE** /campaigns/{name} | Delete Campaign
+*CampaignsApi* | [**CampaignsByNameDelete**]([docs/CampaignsApi.md#campaignsbynamedelete](https://github.com/SoporteNeored/csharp2/tree/main/Docs/CampaignsByNameDelete)) | **DELETE** /campaigns/{name} | Delete Campaign
 *CampaignsApi* | [**CampaignsByNameGet**](docs/CampaignsApi.md#campaignsbynameget) | **GET** /campaigns/{name} | Load Campaign
 *CampaignsApi* | [**CampaignsByNamePut**](docs/CampaignsApi.md#campaignsbynameput) | **PUT** /campaigns/{name} | Update Campaign
 *CampaignsApi* | [**CampaignsGet**](docs/CampaignsApi.md#campaignsget) | **GET** /campaigns | Load Campaigns

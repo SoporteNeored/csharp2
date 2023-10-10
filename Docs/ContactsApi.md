@@ -12,7 +12,7 @@ Todos los URI son relativos
 | [**ContactsExportPost**](ContactsApi.md#contactsexportpost) | **POST** /contactos/exportar | Exportar contactos |
 | [**ContactosGet**](ContactosApi.md#contactsget) | **OBTENER** /contactos | Cargar contactos |
 | [**ContactsImportPost**](ContactsApi.md#contactsimportpost) | **POST** /contactos/importar | Cargar contactos |
-| [**Publicación de contactos**](ContactosApi.md#publicación de contactos) | **POST** /contactos | Agregar contacto |
+| [**Publicación de contactos**](ContactsApi.md#publicacióndecontactos) | **POST** /contactos | Agregar contacto |
 
 <a name="contactsbyemaildelete"></a>
 # **ContactosPorEmailEliminar**

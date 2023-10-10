@@ -861,7 +861,7 @@ catch (ApiException e)
 | Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
 | **carga útil de contacto** | [**Lista&lt;ContactPayload&gt;**](ContactPayload.md) | | |
-| **nombres de lista** | [**Lista&lt;cadena&gt;**](cadena.md) | Nombres de listas a las que se deben agregar los contactos cargados | [opcional] |
+| **nombres de lista** | STRING | Nombres de listas a las que se deben agregar los contactos cargados | [opcional] |
 
 ### Tipo de devolución
 

@@ -1,6 +1,6 @@
 # ElasticEmail.Api.ContactosApi
 
-Todos los URI son relativos a *https://api.elasticemail.com/v4*
+Todos los URI son relativos 
 
 | Método | Solicitud HTTP | Descripción |
 |--------|--------------|-------------|

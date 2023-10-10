@@ -214,7 +214,7 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [Model.AccessLevel](docs/AccessLevel.md)
+ - [Model.AccessLevel](Docs/AccessLevel.md)
  - [Model.AccountStatusEnum](docs/AccountStatusEnum.md)
  - [Model.ApiKey](docs/ApiKey.md)
  - [Model.ApiKeyPayload](docs/ApiKeyPayload.md)

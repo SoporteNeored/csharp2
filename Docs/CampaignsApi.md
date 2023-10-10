@@ -179,7 +179,7 @@ catch (ApiException e)
 
 ### Tipo de devolución
 
-[**Campaña**](Campaña.md)
+[**Campaña**](Campaign.md)
 
 ### Autorización
 
@@ -273,11 +273,11 @@ catch (ApiException e)
 | Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
 | **nombre** | **cadena** | Nombre de la campaña a actualizar | |
-| **campaña** | [**Campaña**](Campaña.md) | Representación JSON de una campaña | |
+| **campaña** | [**Campaña**](Campaign.md) | Representación JSON de una campaña | |
 
 ### Tipo de devolución
 
-[**Campaña**](Campaña.md)
+[**Campaña**](Campaign.md)
 
 ### Autorización
 
@@ -377,7 +377,7 @@ catch (ApiException e)
 
 ### Tipo de devolución
 
-[**Lista&lt;Campaña&gt;**](Campaña.md)
+[**Lista&lt;Campaña&gt;**](Campaign.md)
 
 ### Autorización
 

@@ -469,11 +469,11 @@ catch (ApiException e)
 
 | Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **campaña** | [**Campaña**](Campaña.md) | Representación JSON de una campaña | |
+| **campaña** | [**Campaña**](Campaign.md) | Representación JSON de una campaña | |
 
 ### Tipo de devolución
 
-[**Campaña**](Campaña.md)
+[**Campaña**](Campaign.md)
 
 ### Autorización
 

@@ -113,190 +113,190 @@ Todos los URI son relativos
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*CampaignsApi* | [**CampaignsByNameDelete**]([docs/CampaignsApi.md#campaignsbynamedelete](https://github.com/SoporteNeored/csharp2/tree/main/Docs/CampaignsByNameDelete)) | **DELETE** /campaigns/{name} | Delete Campaign
-*CampaignsApi* | [**CampaignsByNameGet**](docs/CampaignsApi.md#campaignsbynameget) | **GET** /campaigns/{name} | Load Campaign
-*CampaignsApi* | [**CampaignsByNamePut**](docs/CampaignsApi.md#campaignsbynameput) | **PUT** /campaigns/{name} | Update Campaign
-*CampaignsApi* | [**CampaignsGet**](docs/CampaignsApi.md#campaignsget) | **GET** /campaigns | Load Campaigns
-*CampaignsApi* | [**CampaignsPost**](docs/CampaignsApi.md#campaignspost) | **POST** /campaigns | Add Campaign
-*ContactsApi* | [**ContactsByEmailDelete**](docs/ContactsApi.md#contactsbyemaildelete) | **DELETE** /contacts/{email} | Delete Contact
-*ContactsApi* | [**ContactsByEmailGet**](docs/ContactsApi.md#contactsbyemailget) | **GET** /contacts/{email} | Load Contact
-*ContactsApi* | [**ContactsByEmailPut**](docs/ContactsApi.md#contactsbyemailput) | **PUT** /contacts/{email} | Update Contact
-*ContactsApi* | [**ContactsDeletePost**](docs/ContactsApi.md#contactsdeletepost) | **POST** /contacts/delete | Delete Contacts Bulk
-*ContactsApi* | [**ContactsExportByIdStatusGet**](docs/ContactsApi.md#contactsexportbyidstatusget) | **GET** /contacts/export/{id}/status | Check Export Status
-*ContactsApi* | [**ContactsExportPost**](docs/ContactsApi.md#contactsexportpost) | **POST** /contacts/export | Export Contacts
-*ContactsApi* | [**ContactsGet**](docs/ContactsApi.md#contactsget) | **GET** /contacts | Load Contacts
-*ContactsApi* | [**ContactsImportPost**](docs/ContactsApi.md#contactsimportpost) | **POST** /contacts/import | Upload Contacts
-*ContactsApi* | [**ContactsPost**](docs/ContactsApi.md#contactspost) | **POST** /contacts | Add Contact
-*EmailsApi* | [**EmailsByMsgidViewGet**](docs/EmailsApi.md#emailsbymsgidviewget) | **GET** /emails/{msgid}/view | View Email
-*EmailsApi* | [**EmailsMergefilePost**](docs/EmailsApi.md#emailsmergefilepost) | **POST** /emails/mergefile | Send Bulk Emails CSV
-*EmailsApi* | [**EmailsPost**](docs/EmailsApi.md#emailspost) | **POST** /emails | Send Bulk Emails
-*EmailsApi* | [**EmailsTransactionalPost**](docs/EmailsApi.md#emailstransactionalpost) | **POST** /emails/transactional | Send Transactional Email
-*EventsApi* | [**EventsByTransactionidGet**](docs/EventsApi.md#eventsbytransactionidget) | **GET** /events/{transactionid} | Load Email Events
-*EventsApi* | [**EventsChannelsByNameExportPost**](docs/EventsApi.md#eventschannelsbynameexportpost) | **POST** /events/channels/{name}/export | Export Channel Events
-*EventsApi* | [**EventsChannelsByNameGet**](docs/EventsApi.md#eventschannelsbynameget) | **GET** /events/channels/{name} | Load Channel Events
-*EventsApi* | [**EventsChannelsExportByIdStatusGet**](docs/EventsApi.md#eventschannelsexportbyidstatusget) | **GET** /events/channels/export/{id}/status | Check Channel Export Status
-*EventsApi* | [**EventsExportByIdStatusGet**](docs/EventsApi.md#eventsexportbyidstatusget) | **GET** /events/export/{id}/status | Check Export Status
-*EventsApi* | [**EventsExportPost**](docs/EventsApi.md#eventsexportpost) | **POST** /events/export | Export Events
-*EventsApi* | [**EventsGet**](docs/EventsApi.md#eventsget) | **GET** /events | Load Events
-*FilesApi* | [**FilesByNameDelete**](docs/FilesApi.md#filesbynamedelete) | **DELETE** /files/{name} | Delete File
-*FilesApi* | [**FilesByNameGet**](docs/FilesApi.md#filesbynameget) | **GET** /files/{name} | Download File
-*FilesApi* | [**FilesByNameInfoGet**](docs/FilesApi.md#filesbynameinfoget) | **GET** /files/{name}/info | Load File Details
-*FilesApi* | [**FilesGet**](docs/FilesApi.md#filesget) | **GET** /files | List Files
-*FilesApi* | [**FilesPost**](docs/FilesApi.md#filespost) | **POST** /files | Upload File
-*InboundRouteApi* | [**InboundrouteByIdDelete**](docs/InboundRouteApi.md#inboundroutebyiddelete) | **DELETE** /inboundroute/{id} | Delete Route
-*InboundRouteApi* | [**InboundrouteByIdGet**](docs/InboundRouteApi.md#inboundroutebyidget) | **GET** /inboundroute/{id} | Get Route
-*InboundRouteApi* | [**InboundrouteByIdPut**](docs/InboundRouteApi.md#inboundroutebyidput) | **PUT** /inboundroute/{id} | Update Route
-*InboundRouteApi* | [**InboundrouteGet**](docs/InboundRouteApi.md#inboundrouteget) | **GET** /inboundroute | Get Routes
-*InboundRouteApi* | [**InboundrouteOrderPut**](docs/InboundRouteApi.md#inboundrouteorderput) | **PUT** /inboundroute/order | Update Sorting
-*InboundRouteApi* | [**InboundroutePost**](docs/InboundRouteApi.md#inboundroutepost) | **POST** /inboundroute | Create Route
-*ListsApi* | [**ListsByNameContactsPost**](docs/ListsApi.md#listsbynamecontactspost) | **POST** /lists/{name}/contacts | Add Contacts to List
-*ListsApi* | [**ListsByNameContactsRemovePost**](docs/ListsApi.md#listsbynamecontactsremovepost) | **POST** /lists/{name}/contacts/remove | Remove Contacts from List
-*ListsApi* | [**ListsByNameDelete**](docs/ListsApi.md#listsbynamedelete) | **DELETE** /lists/{name} | Delete List
-*ListsApi* | [**ListsByNameGet**](docs/ListsApi.md#listsbynameget) | **GET** /lists/{name} | Load List
-*ListsApi* | [**ListsByNamePut**](docs/ListsApi.md#listsbynameput) | **PUT** /lists/{name} | Update List
-*ListsApi* | [**ListsGet**](docs/ListsApi.md#listsget) | **GET** /lists | Load Lists
-*ListsApi* | [**ListsPost**](docs/ListsApi.md#listspost) | **POST** /lists | Add List
-*SecurityApi* | [**SecurityApikeysByNameDelete**](docs/SecurityApi.md#securityapikeysbynamedelete) | **DELETE** /security/apikeys/{name} | Delete ApiKey
-*SecurityApi* | [**SecurityApikeysByNameGet**](docs/SecurityApi.md#securityapikeysbynameget) | **GET** /security/apikeys/{name} | Load ApiKey
-*SecurityApi* | [**SecurityApikeysByNamePut**](docs/SecurityApi.md#securityapikeysbynameput) | **PUT** /security/apikeys/{name} | Update ApiKey
-*SecurityApi* | [**SecurityApikeysGet**](docs/SecurityApi.md#securityapikeysget) | **GET** /security/apikeys | List ApiKeys
-*SecurityApi* | [**SecurityApikeysPost**](docs/SecurityApi.md#securityapikeyspost) | **POST** /security/apikeys | Add ApiKey
-*SecurityApi* | [**SecuritySmtpByNameDelete**](docs/SecurityApi.md#securitysmtpbynamedelete) | **DELETE** /security/smtp/{name} | Delete SMTP Credential
-*SecurityApi* | [**SecuritySmtpByNameGet**](docs/SecurityApi.md#securitysmtpbynameget) | **GET** /security/smtp/{name} | Load SMTP Credential
-*SecurityApi* | [**SecuritySmtpByNamePut**](docs/SecurityApi.md#securitysmtpbynameput) | **PUT** /security/smtp/{name} | Update SMTP Credential
-*SecurityApi* | [**SecuritySmtpGet**](docs/SecurityApi.md#securitysmtpget) | **GET** /security/smtp | List SMTP Credentials
-*SecurityApi* | [**SecuritySmtpPost**](docs/SecurityApi.md#securitysmtppost) | **POST** /security/smtp | Add SMTP Credential
-*SegmentsApi* | [**SegmentsByNameDelete**](docs/SegmentsApi.md#segmentsbynamedelete) | **DELETE** /segments/{name} | Delete Segment
-*SegmentsApi* | [**SegmentsByNameGet**](docs/SegmentsApi.md#segmentsbynameget) | **GET** /segments/{name} | Load Segment
-*SegmentsApi* | [**SegmentsByNamePut**](docs/SegmentsApi.md#segmentsbynameput) | **PUT** /segments/{name} | Update Segment
-*SegmentsApi* | [**SegmentsGet**](docs/SegmentsApi.md#segmentsget) | **GET** /segments | Load Segments
-*SegmentsApi* | [**SegmentsPost**](docs/SegmentsApi.md#segmentspost) | **POST** /segments | Add Segment
-*StatisticsApi* | [**StatisticsCampaignsByNameGet**](docs/StatisticsApi.md#statisticscampaignsbynameget) | **GET** /statistics/campaigns/{name} | Load Campaign Stats
-*StatisticsApi* | [**StatisticsCampaignsGet**](docs/StatisticsApi.md#statisticscampaignsget) | **GET** /statistics/campaigns | Load Campaigns Stats
-*StatisticsApi* | [**StatisticsChannelsByNameGet**](docs/StatisticsApi.md#statisticschannelsbynameget) | **GET** /statistics/channels/{name} | Load Channel Stats
-*StatisticsApi* | [**StatisticsChannelsGet**](docs/StatisticsApi.md#statisticschannelsget) | **GET** /statistics/channels | Load Channels Stats
-*StatisticsApi* | [**StatisticsGet**](docs/StatisticsApi.md#statisticsget) | **GET** /statistics | Load Statistics
-*SubAccountsApi* | [**SubaccountsByEmailCreditsPatch**](docs/SubAccountsApi.md#subaccountsbyemailcreditspatch) | **PATCH** /subaccounts/{email}/credits | Add, Subtract Email Credits
-*SubAccountsApi* | [**SubaccountsByEmailDelete**](docs/SubAccountsApi.md#subaccountsbyemaildelete) | **DELETE** /subaccounts/{email} | Delete SubAccount
-*SubAccountsApi* | [**SubaccountsByEmailGet**](docs/SubAccountsApi.md#subaccountsbyemailget) | **GET** /subaccounts/{email} | Load SubAccount
-*SubAccountsApi* | [**SubaccountsByEmailSettingsEmailPut**](docs/SubAccountsApi.md#subaccountsbyemailsettingsemailput) | **PUT** /subaccounts/{email}/settings/email | Update SubAccount Email Settings
-*SubAccountsApi* | [**SubaccountsGet**](docs/SubAccountsApi.md#subaccountsget) | **GET** /subaccounts | Load SubAccounts
-*SubAccountsApi* | [**SubaccountsPost**](docs/SubAccountsApi.md#subaccountspost) | **POST** /subaccounts | Add SubAccount
-*SuppressionsApi* | [**SuppressionsBouncesGet**](docs/SuppressionsApi.md#suppressionsbouncesget) | **GET** /suppressions/bounces | Get Bounce List
-*SuppressionsApi* | [**SuppressionsBouncesImportPost**](docs/SuppressionsApi.md#suppressionsbouncesimportpost) | **POST** /suppressions/bounces/import | Add Bounces Async
-*SuppressionsApi* | [**SuppressionsBouncesPost**](docs/SuppressionsApi.md#suppressionsbouncespost) | **POST** /suppressions/bounces | Add Bounces
-*SuppressionsApi* | [**SuppressionsByEmailDelete**](docs/SuppressionsApi.md#suppressionsbyemaildelete) | **DELETE** /suppressions/{email} | Delete Suppression
-*SuppressionsApi* | [**SuppressionsByEmailGet**](docs/SuppressionsApi.md#suppressionsbyemailget) | **GET** /suppressions/{email} | Get Suppression
-*SuppressionsApi* | [**SuppressionsComplaintsGet**](docs/SuppressionsApi.md#suppressionscomplaintsget) | **GET** /suppressions/complaints | Get Complaints List
-*SuppressionsApi* | [**SuppressionsComplaintsImportPost**](docs/SuppressionsApi.md#suppressionscomplaintsimportpost) | **POST** /suppressions/complaints/import | Add Complaints Async
-*SuppressionsApi* | [**SuppressionsComplaintsPost**](docs/SuppressionsApi.md#suppressionscomplaintspost) | **POST** /suppressions/complaints | Add Complaints
-*SuppressionsApi* | [**SuppressionsGet**](docs/SuppressionsApi.md#suppressionsget) | **GET** /suppressions | Get Suppressions
-*SuppressionsApi* | [**SuppressionsUnsubscribesGet**](docs/SuppressionsApi.md#suppressionsunsubscribesget) | **GET** /suppressions/unsubscribes | Get Unsubscribes List
-*SuppressionsApi* | [**SuppressionsUnsubscribesImportPost**](docs/SuppressionsApi.md#suppressionsunsubscribesimportpost) | **POST** /suppressions/unsubscribes/import | Add Unsubscribes Async
-*SuppressionsApi* | [**SuppressionsUnsubscribesPost**](docs/SuppressionsApi.md#suppressionsunsubscribespost) | **POST** /suppressions/unsubscribes | Add Unsubscribes
-*TemplatesApi* | [**TemplatesByNameDelete**](docs/TemplatesApi.md#templatesbynamedelete) | **DELETE** /templates/{name} | Delete Template
-*TemplatesApi* | [**TemplatesByNameGet**](docs/TemplatesApi.md#templatesbynameget) | **GET** /templates/{name} | Load Template
-*TemplatesApi* | [**TemplatesByNamePut**](docs/TemplatesApi.md#templatesbynameput) | **PUT** /templates/{name} | Update Template
-*TemplatesApi* | [**TemplatesGet**](docs/TemplatesApi.md#templatesget) | **GET** /templates | Load Templates
-*TemplatesApi* | [**TemplatesPost**](docs/TemplatesApi.md#templatespost) | **POST** /templates | Add Template
-*VerificationsApi* | [**VerificationsByEmailDelete**](docs/VerificationsApi.md#verificationsbyemaildelete) | **DELETE** /verifications/{email} | Delete Email Verification Result
-*VerificationsApi* | [**VerificationsByEmailGet**](docs/VerificationsApi.md#verificationsbyemailget) | **GET** /verifications/{email} | Get Email Verification Result
-*VerificationsApi* | [**VerificationsByEmailPost**](docs/VerificationsApi.md#verificationsbyemailpost) | **POST** /verifications/{email} | Verify Email
-*VerificationsApi* | [**VerificationsFilesByIdDelete**](docs/VerificationsApi.md#verificationsfilesbyiddelete) | **DELETE** /verifications/files/{id} | Delete File Verification Result
-*VerificationsApi* | [**VerificationsFilesByIdResultDownloadGet**](docs/VerificationsApi.md#verificationsfilesbyidresultdownloadget) | **GET** /verifications/files/{id}/result/download | Download File Verification Result
-*VerificationsApi* | [**VerificationsFilesByIdResultGet**](docs/VerificationsApi.md#verificationsfilesbyidresultget) | **GET** /verifications/files/{id}/result | Get Detailed File Verification Result
-*VerificationsApi* | [**VerificationsFilesByIdVerificationPost**](docs/VerificationsApi.md#verificationsfilesbyidverificationpost) | **POST** /verifications/files/{id}/verification | Start verification
-*VerificationsApi* | [**VerificationsFilesPost**](docs/VerificationsApi.md#verificationsfilespost) | **POST** /verifications/files | Upload File with Emails
-*VerificationsApi* | [**VerificationsFilesResultGet**](docs/VerificationsApi.md#verificationsfilesresultget) | **GET** /verifications/files/result | Get Files Verification Results
-*VerificationsApi* | [**VerificationsGet**](docs/VerificationsApi.md#verificationsget) | **GET** /verifications | Get Emails Verification Results
+*CampaignsApi* | [**CampaignsByNameDelete**]([Docs/CampaignsApi.md#campaignsbynamedelete](https://github.com/SoporteNeored/csharp2/tree/main/Docs/CampaignsByNameDelete)) | **DELETE** /campaigns/{name} | Delete Campaign
+*CampaignsApi* | [**CampaignsByNameGet**](Docs/CampaignsApi.md#campaignsbynameget) | **GET** /campaigns/{name} | Load Campaign
+*CampaignsApi* | [**CampaignsByNamePut**](Docs/CampaignsApi.md#campaignsbynameput) | **PUT** /campaigns/{name} | Update Campaign
+*CampaignsApi* | [**CampaignsGet**](Docs/CampaignsApi.md#campaignsget) | **GET** /campaigns | Load Campaigns
+*CampaignsApi* | [**CampaignsPost**](Docs/CampaignsApi.md#campaignspost) | **POST** /campaigns | Add Campaign
+*ContactsApi* | [**ContactsByEmailDelete**](Docs/ContactsApi.md#contactsbyemaildelete) | **DELETE** /contacts/{email} | Delete Contact
+*ContactsApi* | [**ContactsByEmailGet**](Docs/ContactsApi.md#contactsbyemailget) | **GET** /contacts/{email} | Load Contact
+*ContactsApi* | [**ContactsByEmailPut**](Docs/ContactsApi.md#contactsbyemailput) | **PUT** /contacts/{email} | Update Contact
+*ContactsApi* | [**ContactsDeletePost**](Docs/ContactsApi.md#contactsdeletepost) | **POST** /contacts/delete | Delete Contacts Bulk
+*ContactsApi* | [**ContactsExportByIdStatusGet**](Docs/ContactsApi.md#contactsexportbyidstatusget) | **GET** /contacts/export/{id}/status | Check Export Status
+*ContactsApi* | [**ContactsExportPost**](Docs/ContactsApi.md#contactsexportpost) | **POST** /contacts/export | Export Contacts
+*ContactsApi* | [**ContactsGet**](Docs/ContactsApi.md#contactsget) | **GET** /contacts | Load Contacts
+*ContactsApi* | [**ContactsImportPost**](Docs/ContactsApi.md#contactsimportpost) | **POST** /contacts/import | Upload Contacts
+*ContactsApi* | [**ContactsPost**](Docs/ContactsApi.md#contactspost) | **POST** /contacts | Add Contact
+*EmailsApi* | [**EmailsByMsgidViewGet**](Docs/EmailsApi.md#emailsbymsgidviewget) | **GET** /emails/{msgid}/view | View Email
+*EmailsApi* | [**EmailsMergefilePost**](Docs/EmailsApi.md#emailsmergefilepost) | **POST** /emails/mergefile | Send Bulk Emails CSV
+*EmailsApi* | [**EmailsPost**](Docs/EmailsApi.md#emailspost) | **POST** /emails | Send Bulk Emails
+*EmailsApi* | [**EmailsTransactionalPost**](Docs/EmailsApi.md#emailstransactionalpost) | **POST** /emails/transactional | Send Transactional Email
+*EventsApi* | [**EventsByTransactionidGet**](Docs/EventsApi.md#eventsbytransactionidget) | **GET** /events/{transactionid} | Load Email Events
+*EventsApi* | [**EventsChannelsByNameExportPost**](Docs/EventsApi.md#eventschannelsbynameexportpost) | **POST** /events/channels/{name}/export | Export Channel Events
+*EventsApi* | [**EventsChannelsByNameGet**](Docs/EventsApi.md#eventschannelsbynameget) | **GET** /events/channels/{name} | Load Channel Events
+*EventsApi* | [**EventsChannelsExportByIdStatusGet**](Docs/EventsApi.md#eventschannelsexportbyidstatusget) | **GET** /events/channels/export/{id}/status | Check Channel Export Status
+*EventsApi* | [**EventsExportByIdStatusGet**](Docs/EventsApi.md#eventsexportbyidstatusget) | **GET** /events/export/{id}/status | Check Export Status
+*EventsApi* | [**EventsExportPost**](Docs/EventsApi.md#eventsexportpost) | **POST** /events/export | Export Events
+*EventsApi* | [**EventsGet**](Docs/EventsApi.md#eventsget) | **GET** /events | Load Events
+*FilesApi* | [**FilesByNameDelete**](Docs/FilesApi.md#filesbynamedelete) | **DELETE** /files/{name} | Delete File
+*FilesApi* | [**FilesByNameGet**](Docs/FilesApi.md#filesbynameget) | **GET** /files/{name} | Download File
+*FilesApi* | [**FilesByNameInfoGet**](Docs/FilesApi.md#filesbynameinfoget) | **GET** /files/{name}/info | Load File Details
+*FilesApi* | [**FilesGet**](Docs/FilesApi.md#filesget) | **GET** /files | List Files
+*FilesApi* | [**FilesPost**](Docs/FilesApi.md#filespost) | **POST** /files | Upload File
+*InboundRouteApi* | [**InboundrouteByIdDelete**](Docs/InboundRouteApi.md#inboundroutebyiddelete) | **DELETE** /inboundroute/{id} | Delete Route
+*InboundRouteApi* | [**InboundrouteByIdGet**](Docs/InboundRouteApi.md#inboundroutebyidget) | **GET** /inboundroute/{id} | Get Route
+*InboundRouteApi* | [**InboundrouteByIdPut**](Docs/InboundRouteApi.md#inboundroutebyidput) | **PUT** /inboundroute/{id} | Update Route
+*InboundRouteApi* | [**InboundrouteGet**](Docs/InboundRouteApi.md#inboundrouteget) | **GET** /inboundroute | Get Routes
+*InboundRouteApi* | [**InboundrouteOrderPut**](Docs/InboundRouteApi.md#inboundrouteorderput) | **PUT** /inboundroute/order | Update Sorting
+*InboundRouteApi* | [**InboundroutePost**](Docs/InboundRouteApi.md#inboundroutepost) | **POST** /inboundroute | Create Route
+*ListsApi* | [**ListsByNameContactsPost**](Docs/ListsApi.md#listsbynamecontactspost) | **POST** /lists/{name}/contacts | Add Contacts to List
+*ListsApi* | [**ListsByNameContactsRemovePost**](Docs/ListsApi.md#listsbynamecontactsremovepost) | **POST** /lists/{name}/contacts/remove | Remove Contacts from List
+*ListsApi* | [**ListsByNameDelete**](Docs/ListsApi.md#listsbynamedelete) | **DELETE** /lists/{name} | Delete List
+*ListsApi* | [**ListsByNameGet**](Docs/ListsApi.md#listsbynameget) | **GET** /lists/{name} | Load List
+*ListsApi* | [**ListsByNamePut**](Docs/ListsApi.md#listsbynameput) | **PUT** /lists/{name} | Update List
+*ListsApi* | [**ListsGet**](Docs/ListsApi.md#listsget) | **GET** /lists | Load Lists
+*ListsApi* | [**ListsPost**](Docs/ListsApi.md#listspost) | **POST** /lists | Add List
+*SecurityApi* | [**SecurityApikeysByNameDelete**](Docs/SecurityApi.md#securityapikeysbynamedelete) | **DELETE** /security/apikeys/{name} | Delete ApiKey
+*SecurityApi* | [**SecurityApikeysByNameGet**](Docs/SecurityApi.md#securityapikeysbynameget) | **GET** /security/apikeys/{name} | Load ApiKey
+*SecurityApi* | [**SecurityApikeysByNamePut**](Docs/SecurityApi.md#securityapikeysbynameput) | **PUT** /security/apikeys/{name} | Update ApiKey
+*SecurityApi* | [**SecurityApikeysGet**](Docs/SecurityApi.md#securityapikeysget) | **GET** /security/apikeys | List ApiKeys
+*SecurityApi* | [**SecurityApikeysPost**](Docs/SecurityApi.md#securityapikeyspost) | **POST** /security/apikeys | Add ApiKey
+*SecurityApi* | [**SecuritySmtpByNameDelete**](Docs/SecurityApi.md#securitysmtpbynamedelete) | **DELETE** /security/smtp/{name} | Delete SMTP Credential
+*SecurityApi* | [**SecuritySmtpByNameGet**](Docs/SecurityApi.md#securitysmtpbynameget) | **GET** /security/smtp/{name} | Load SMTP Credential
+*SecurityApi* | [**SecuritySmtpByNamePut**](Docs/SecurityApi.md#securitysmtpbynameput) | **PUT** /security/smtp/{name} | Update SMTP Credential
+*SecurityApi* | [**SecuritySmtpGet**](Docs/SecurityApi.md#securitysmtpget) | **GET** /security/smtp | List SMTP Credentials
+*SecurityApi* | [**SecuritySmtpPost**](Docs/SecurityApi.md#securitysmtppost) | **POST** /security/smtp | Add SMTP Credential
+*SegmentsApi* | [**SegmentsByNameDelete**](Docs/SegmentsApi.md#segmentsbynamedelete) | **DELETE** /segments/{name} | Delete Segment
+*SegmentsApi* | [**SegmentsByNameGet**](Docs/SegmentsApi.md#segmentsbynameget) | **GET** /segments/{name} | Load Segment
+*SegmentsApi* | [**SegmentsByNamePut**](Docs/SegmentsApi.md#segmentsbynameput) | **PUT** /segments/{name} | Update Segment
+*SegmentsApi* | [**SegmentsGet**](Docs/SegmentsApi.md#segmentsget) | **GET** /segments | Load Segments
+*SegmentsApi* | [**SegmentsPost**](Docs/SegmentsApi.md#segmentspost) | **POST** /segments | Add Segment
+*StatisticsApi* | [**StatisticsCampaignsByNameGet**](Docs/StatisticsApi.md#statisticscampaignsbynameget) | **GET** /statistics/campaigns/{name} | Load Campaign Stats
+*StatisticsApi* | [**StatisticsCampaignsGet**](Docs/StatisticsApi.md#statisticscampaignsget) | **GET** /statistics/campaigns | Load Campaigns Stats
+*StatisticsApi* | [**StatisticsChannelsByNameGet**](Docs/StatisticsApi.md#statisticschannelsbynameget) | **GET** /statistics/channels/{name} | Load Channel Stats
+*StatisticsApi* | [**StatisticsChannelsGet**](Docs/StatisticsApi.md#statisticschannelsget) | **GET** /statistics/channels | Load Channels Stats
+*StatisticsApi* | [**StatisticsGet**](Docs/StatisticsApi.md#statisticsget) | **GET** /statistics | Load Statistics
+*SubAccountsApi* | [**SubaccountsByEmailCreditsPatch**](Docs/SubAccountsApi.md#subaccountsbyemailcreditspatch) | **PATCH** /subaccounts/{email}/credits | Add, Subtract Email Credits
+*SubAccountsApi* | [**SubaccountsByEmailDelete**](Docs/SubAccountsApi.md#subaccountsbyemaildelete) | **DELETE** /subaccounts/{email} | Delete SubAccount
+*SubAccountsApi* | [**SubaccountsByEmailGet**](Docs/SubAccountsApi.md#subaccountsbyemailget) | **GET** /subaccounts/{email} | Load SubAccount
+*SubAccountsApi* | [**SubaccountsByEmailSettingsEmailPut**](Docs/SubAccountsApi.md#subaccountsbyemailsettingsemailput) | **PUT** /subaccounts/{email}/settings/email | Update SubAccount Email Settings
+*SubAccountsApi* | [**SubaccountsGet**](Docs/SubAccountsApi.md#subaccountsget) | **GET** /subaccounts | Load SubAccounts
+*SubAccountsApi* | [**SubaccountsPost**](Docs/SubAccountsApi.md#subaccountspost) | **POST** /subaccounts | Add SubAccount
+*SuppressionsApi* | [**SuppressionsBouncesGet**](Docs/SuppressionsApi.md#suppressionsbouncesget) | **GET** /suppressions/bounces | Get Bounce List
+*SuppressionsApi* | [**SuppressionsBouncesImportPost**](Docs/SuppressionsApi.md#suppressionsbouncesimportpost) | **POST** /suppressions/bounces/import | Add Bounces Async
+*SuppressionsApi* | [**SuppressionsBouncesPost**](Docs/SuppressionsApi.md#suppressionsbouncespost) | **POST** /suppressions/bounces | Add Bounces
+*SuppressionsApi* | [**SuppressionsByEmailDelete**](Docs/SuppressionsApi.md#suppressionsbyemaildelete) | **DELETE** /suppressions/{email} | Delete Suppression
+*SuppressionsApi* | [**SuppressionsByEmailGet**](Docs/SuppressionsApi.md#suppressionsbyemailget) | **GET** /suppressions/{email} | Get Suppression
+*SuppressionsApi* | [**SuppressionsComplaintsGet**](Docs/SuppressionsApi.md#suppressionscomplaintsget) | **GET** /suppressions/complaints | Get Complaints List
+*SuppressionsApi* | [**SuppressionsComplaintsImportPost**](Docs/SuppressionsApi.md#suppressionscomplaintsimportpost) | **POST** /suppressions/complaints/import | Add Complaints Async
+*SuppressionsApi* | [**SuppressionsComplaintsPost**](Docs/SuppressionsApi.md#suppressionscomplaintspost) | **POST** /suppressions/complaints | Add Complaints
+*SuppressionsApi* | [**SuppressionsGet**](Docs/SuppressionsApi.md#suppressionsget) | **GET** /suppressions | Get Suppressions
+*SuppressionsApi* | [**SuppressionsUnsubscribesGet**](Docs/SuppressionsApi.md#suppressionsunsubscribesget) | **GET** /suppressions/unsubscribes | Get Unsubscribes List
+*SuppressionsApi* | [**SuppressionsUnsubscribesImportPost**](Docs/SuppressionsApi.md#suppressionsunsubscribesimportpost) | **POST** /suppressions/unsubscribes/import | Add Unsubscribes Async
+*SuppressionsApi* | [**SuppressionsUnsubscribesPost**](Docs/SuppressionsApi.md#suppressionsunsubscribespost) | **POST** /suppressions/unsubscribes | Add Unsubscribes
+*TemplatesApi* | [**TemplatesByNameDelete**](Docs/TemplatesApi.md#templatesbynamedelete) | **DELETE** /templates/{name} | Delete Template
+*TemplatesApi* | [**TemplatesByNameGet**](Docs/TemplatesApi.md#templatesbynameget) | **GET** /templates/{name} | Load Template
+*TemplatesApi* | [**TemplatesByNamePut**](Docs/TemplatesApi.md#templatesbynameput) | **PUT** /templates/{name} | Update Template
+*TemplatesApi* | [**TemplatesGet**](Docs/TemplatesApi.md#templatesget) | **GET** /templates | Load Templates
+*TemplatesApi* | [**TemplatesPost**](Docs/TemplatesApi.md#templatespost) | **POST** /templates | Add Template
+*VerificationsApi* | [**VerificationsByEmailDelete**](Docs/VerificationsApi.md#verificationsbyemaildelete) | **DELETE** /verifications/{email} | Delete Email Verification Result
+*VerificationsApi* | [**VerificationsByEmailGet**](Docs/VerificationsApi.md#verificationsbyemailget) | **GET** /verifications/{email} | Get Email Verification Result
+*VerificationsApi* | [**VerificationsByEmailPost**](Docs/VerificationsApi.md#verificationsbyemailpost) | **POST** /verifications/{email} | Verify Email
+*VerificationsApi* | [**VerificationsFilesByIdDelete**](Docs/VerificationsApi.md#verificationsfilesbyiddelete) | **DELETE** /verifications/files/{id} | Delete File Verification Result
+*VerificationsApi* | [**VerificationsFilesByIdResultDownloadGet**](Docs/VerificationsApi.md#verificationsfilesbyidresultdownloadget) | **GET** /verifications/files/{id}/result/download | Download File Verification Result
+*VerificationsApi* | [**VerificationsFilesByIdResultGet**](Docs/VerificationsApi.md#verificationsfilesbyidresultget) | **GET** /verifications/files/{id}/result | Get Detailed File Verification Result
+*VerificationsApi* | [**VerificationsFilesByIdVerificationPost**](Docs/VerificationsApi.md#verificationsfilesbyidverificationpost) | **POST** /verifications/files/{id}/verification | Start verification
+*VerificationsApi* | [**VerificationsFilesPost**](Docs/VerificationsApi.md#verificationsfilespost) | **POST** /verifications/files | Upload File with Emails
+*VerificationsApi* | [**VerificationsFilesResultGet**](Docs/VerificationsApi.md#verificationsfilesresultget) | **GET** /verifications/files/result | Get Files Verification Results
+*VerificationsApi* | [**VerificationsGet**](Docs/VerificationsApi.md#verificationsget) | **GET** /verifications | Get Emails Verification Results
 
 
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
  - [Model.AccessLevel](Docs/AccessLevel.md)
- - [Model.AccountStatusEnum](docs/AccountStatusEnum.md)
- - [Model.ApiKey](docs/ApiKey.md)
- - [Model.ApiKeyPayload](docs/ApiKeyPayload.md)
- - [Model.BodyContentType](docs/BodyContentType.md)
- - [Model.BodyPart](docs/BodyPart.md)
- - [Model.Campaign](docs/Campaign.md)
- - [Model.CampaignOptions](docs/CampaignOptions.md)
- - [Model.CampaignRecipient](docs/CampaignRecipient.md)
- - [Model.CampaignStatus](docs/CampaignStatus.md)
- - [Model.CampaignTemplate](docs/CampaignTemplate.md)
- - [Model.ChannelLogStatusSummary](docs/ChannelLogStatusSummary.md)
- - [Model.CompressionFormat](docs/CompressionFormat.md)
- - [Model.ConsentData](docs/ConsentData.md)
- - [Model.ConsentTracking](docs/ConsentTracking.md)
- - [Model.Contact](docs/Contact.md)
- - [Model.ContactActivity](docs/ContactActivity.md)
- - [Model.ContactPayload](docs/ContactPayload.md)
- - [Model.ContactSource](docs/ContactSource.md)
- - [Model.ContactStatus](docs/ContactStatus.md)
- - [Model.ContactUpdatePayload](docs/ContactUpdatePayload.md)
- - [Model.ContactsList](docs/ContactsList.md)
- - [Model.DeliveryOptimizationType](docs/DeliveryOptimizationType.md)
- - [Model.EmailContent](docs/EmailContent.md)
- - [Model.EmailData](docs/EmailData.md)
- - [Model.EmailMessageData](docs/EmailMessageData.md)
- - [Model.EmailPredictedValidationStatus](docs/EmailPredictedValidationStatus.md)
- - [Model.EmailRecipient](docs/EmailRecipient.md)
- - [Model.EmailSend](docs/EmailSend.md)
- - [Model.EmailStatus](docs/EmailStatus.md)
- - [Model.EmailTransactionalMessageData](docs/EmailTransactionalMessageData.md)
- - [Model.EmailValidationResult](docs/EmailValidationResult.md)
- - [Model.EmailValidationStatus](docs/EmailValidationStatus.md)
- - [Model.EmailView](docs/EmailView.md)
- - [Model.EmailsPayload](docs/EmailsPayload.md)
- - [Model.EncodingType](docs/EncodingType.md)
- - [Model.EventType](docs/EventType.md)
- - [Model.EventsOrderBy](docs/EventsOrderBy.md)
- - [Model.ExportFileFormats](docs/ExportFileFormats.md)
- - [Model.ExportLink](docs/ExportLink.md)
- - [Model.ExportStatus](docs/ExportStatus.md)
- - [Model.FileInfo](docs/FileInfo.md)
- - [Model.FilePayload](docs/FilePayload.md)
- - [Model.FileUploadResult](docs/FileUploadResult.md)
- - [Model.InboundPayload](docs/InboundPayload.md)
- - [Model.InboundRoute](docs/InboundRoute.md)
- - [Model.InboundRouteActionType](docs/InboundRouteActionType.md)
- - [Model.InboundRouteFilterType](docs/InboundRouteFilterType.md)
- - [Model.ListPayload](docs/ListPayload.md)
- - [Model.ListUpdatePayload](docs/ListUpdatePayload.md)
- - [Model.LogJobStatus](docs/LogJobStatus.md)
- - [Model.LogStatusSummary](docs/LogStatusSummary.md)
- - [Model.MergeEmailPayload](docs/MergeEmailPayload.md)
- - [Model.MessageAttachment](docs/MessageAttachment.md)
- - [Model.MessageCategory](docs/MessageCategory.md)
- - [Model.NewApiKey](docs/NewApiKey.md)
- - [Model.NewSmtpCredentials](docs/NewSmtpCredentials.md)
- - [Model.Options](docs/Options.md)
- - [Model.RecipientEvent](docs/RecipientEvent.md)
- - [Model.Segment](docs/Segment.md)
- - [Model.SegmentPayload](docs/SegmentPayload.md)
- - [Model.SmtpCredentials](docs/SmtpCredentials.md)
- - [Model.SmtpCredentialsPayload](docs/SmtpCredentialsPayload.md)
- - [Model.SortOrderItem](docs/SortOrderItem.md)
- - [Model.SplitOptimizationType](docs/SplitOptimizationType.md)
- - [Model.SplitOptions](docs/SplitOptions.md)
- - [Model.SubAccountInfo](docs/SubAccountInfo.md)
- - [Model.SubaccountEmailCreditsPayload](docs/SubaccountEmailCreditsPayload.md)
- - [Model.SubaccountEmailSettings](docs/SubaccountEmailSettings.md)
- - [Model.SubaccountEmailSettingsPayload](docs/SubaccountEmailSettingsPayload.md)
- - [Model.SubaccountPayload](docs/SubaccountPayload.md)
- - [Model.SubaccountSettingsInfo](docs/SubaccountSettingsInfo.md)
- - [Model.SubaccountSettingsInfoPayload](docs/SubaccountSettingsInfoPayload.md)
- - [Model.Suppression](docs/Suppression.md)
- - [Model.Template](docs/Template.md)
- - [Model.TemplatePayload](docs/TemplatePayload.md)
- - [Model.TemplateScope](docs/TemplateScope.md)
- - [Model.TemplateType](docs/TemplateType.md)
- - [Model.TransactionalRecipient](docs/TransactionalRecipient.md)
- - [Model.Utm](docs/Utm.md)
- - [Model.VerificationFileResult](docs/VerificationFileResult.md)
- - [Model.VerificationFileResultDetails](docs/VerificationFileResultDetails.md)
- - [Model.VerificationStatus](docs/VerificationStatus.md)
+ - [Model.AccountStatusEnum](Docs/AccountStatusEnum.md)
+ - [Model.ApiKey](Docs/ApiKey.md)
+ - [Model.ApiKeyPayload](Docs/ApiKeyPayload.md)
+ - [Model.BodyContentType](Docs/BodyContentType.md)
+ - [Model.BodyPart](Docs/BodyPart.md)
+ - [Model.Campaign](Docs/Campaign.md)
+ - [Model.CampaignOptions](Docs/CampaignOptions.md)
+ - [Model.CampaignRecipient](Docs/CampaignRecipient.md)
+ - [Model.CampaignStatus](Docs/CampaignStatus.md)
+ - [Model.CampaignTemplate](Docs/CampaignTemplate.md)
+ - [Model.ChannelLogStatusSummary](Docs/ChannelLogStatusSummary.md)
+ - [Model.CompressionFormat](Docs/CompressionFormat.md)
+ - [Model.ConsentData](Docs/ConsentData.md)
+ - [Model.ConsentTracking](Docs/ConsentTracking.md)
+ - [Model.Contact](Docs/Contact.md)
+ - [Model.ContactActivity](Docs/ContactActivity.md)
+ - [Model.ContactPayload](Docs/ContactPayload.md)
+ - [Model.ContactSource](Docs/ContactSource.md)
+ - [Model.ContactStatus](Docs/ContactStatus.md)
+ - [Model.ContactUpdatePayload](Docs/ContactUpdatePayload.md)
+ - [Model.ContactsList](Docs/ContactsList.md)
+ - [Model.DeliveryOptimizationType](Docs/DeliveryOptimizationType.md)
+ - [Model.EmailContent](Docs/EmailContent.md)
+ - [Model.EmailData](Docs/EmailData.md)
+ - [Model.EmailMessageData](Docs/EmailMessageData.md)
+ - [Model.EmailPredictedValidationStatus](Docs/EmailPredictedValidationStatus.md)
+ - [Model.EmailRecipient](Docs/EmailRecipient.md)
+ - [Model.EmailSend](Docs/EmailSend.md)
+ - [Model.EmailStatus](Docs/EmailStatus.md)
+ - [Model.EmailTransactionalMessageData](Docs/EmailTransactionalMessageData.md)
+ - [Model.EmailValidationResult](Docs/EmailValidationResult.md)
+ - [Model.EmailValidationStatus](Docs/EmailValidationStatus.md)
+ - [Model.EmailView](Docs/EmailView.md)
+ - [Model.EmailsPayload](Docs/EmailsPayload.md)
+ - [Model.EncodingType](Docs/EncodingType.md)
+ - [Model.EventType](Docs/EventType.md)
+ - [Model.EventsOrderBy](Docs/EventsOrderBy.md)
+ - [Model.ExportFileFormats](Docs/ExportFileFormats.md)
+ - [Model.ExportLink](Docs/ExportLink.md)
+ - [Model.ExportStatus](Docs/ExportStatus.md)
+ - [Model.FileInfo](Docs/FileInfo.md)
+ - [Model.FilePayload](Docs/FilePayload.md)
+ - [Model.FileUploadResult](Docs/FileUploadResult.md)
+ - [Model.InboundPayload](Docs/InboundPayload.md)
+ - [Model.InboundRoute](Docs/InboundRoute.md)
+ - [Model.InboundRouteActionType](Docs/InboundRouteActionType.md)
+ - [Model.InboundRouteFilterType](Docs/InboundRouteFilterType.md)
+ - [Model.ListPayload](Docs/ListPayload.md)
+ - [Model.ListUpdatePayload](Docs/ListUpdatePayload.md)
+ - [Model.LogJobStatus](Docs/LogJobStatus.md)
+ - [Model.LogStatusSummary](Docs/LogStatusSummary.md)
+ - [Model.MergeEmailPayload](Docs/MergeEmailPayload.md)
+ - [Model.MessageAttachment](Docs/MessageAttachment.md)
+ - [Model.MessageCategory](Docs/MessageCategory.md)
+ - [Model.NewApiKey](Docs/NewApiKey.md)
+ - [Model.NewSmtpCredentials](Docs/NewSmtpCredentials.md)
+ - [Model.Options](Docs/Options.md)
+ - [Model.RecipientEvent](Docs/RecipientEvent.md)
+ - [Model.Segment](Docs/Segment.md)
+ - [Model.SegmentPayload](Docs/SegmentPayload.md)
+ - [Model.SmtpCredentials](Docs/SmtpCredentials.md)
+ - [Model.SmtpCredentialsPayload](Docs/SmtpCredentialsPayload.md)
+ - [Model.SortOrderItem](Docs/SortOrderItem.md)
+ - [Model.SplitOptimizationType](Docs/SplitOptimizationType.md)
+ - [Model.SplitOptions](Docs/SplitOptions.md)
+ - [Model.SubAccountInfo](Docs/SubAccountInfo.md)
+ - [Model.SubaccountEmailCreditsPayload](Docs/SubaccountEmailCreditsPayload.md)
+ - [Model.SubaccountEmailSettings](Docs/SubaccountEmailSettings.md)
+ - [Model.SubaccountEmailSettingsPayload](Docs/SubaccountEmailSettingsPayload.md)
+ - [Model.SubaccountPayload](Docs/SubaccountPayload.md)
+ - [Model.SubaccountSettingsInfo](Docs/SubaccountSettingsInfo.md)
+ - [Model.SubaccountSettingsInfoPayload](Docs/SubaccountSettingsInfoPayload.md)
+ - [Model.Suppression](Docs/Suppression.md)
+ - [Model.Template](Docs/Template.md)
+ - [Model.TemplatePayload](Docs/TemplatePayload.md)
+ - [Model.TemplateScope](Docs/TemplateScope.md)
+ - [Model.TemplateType](Docs/TemplateType.md)
+ - [Model.TransactionalRecipient](Docs/TransactionalRecipient.md)
+ - [Model.Utm](Docs/Utm.md)
+ - [Model.VerificationFileResult](Docs/VerificationFileResult.md)
+ - [Model.VerificationFileResultDetails](Docs/VerificationFileResultDetails.md)
+ - [Model.VerificationStatus](Docs/VerificationStatus.md)
 
 
 <a name="documentation-for-authorization"></a>

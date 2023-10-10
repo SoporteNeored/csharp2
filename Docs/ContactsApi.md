@@ -1,28 +1,28 @@
-# ElasticEmail.Api.ContactsApi
+# ElasticEmail.Api.ContactosApi
 
-All URIs are relative to *https://api.elasticemail.com/v4*
+Todos los URI son relativos a *https://api.elasticemail.com/v4*
 
-| Method | HTTP request | Description |
+| Método | Solicitud HTTP | Descripción |
 |--------|--------------|-------------|
-| [**ContactsByEmailDelete**](ContactsApi.md#contactsbyemaildelete) | **DELETE** /contacts/{email} | Delete Contact |
-| [**ContactsByEmailGet**](ContactsApi.md#contactsbyemailget) | **GET** /contacts/{email} | Load Contact |
-| [**ContactsByEmailPut**](ContactsApi.md#contactsbyemailput) | **PUT** /contacts/{email} | Update Contact |
-| [**ContactsDeletePost**](ContactsApi.md#contactsdeletepost) | **POST** /contacts/delete | Delete Contacts Bulk |
-| [**ContactsExportByIdStatusGet**](ContactsApi.md#contactsexportbyidstatusget) | **GET** /contacts/export/{id}/status | Check Export Status |
-| [**ContactsExportPost**](ContactsApi.md#contactsexportpost) | **POST** /contacts/export | Export Contacts |
-| [**ContactsGet**](ContactsApi.md#contactsget) | **GET** /contacts | Load Contacts |
-| [**ContactsImportPost**](ContactsApi.md#contactsimportpost) | **POST** /contacts/import | Upload Contacts |
-| [**ContactsPost**](ContactsApi.md#contactspost) | **POST** /contacts | Add Contact |
+| [**ContactosByEmailDelete**](ContactsApi.md#contactsbyemaildelete) | **ELIMINAR** /contactos/{correo electrónico} | Eliminar contacto |
+| [**ContactosByEmailGet**](ContactosApi.md#contactsbyemailget) | **OBTENER** /contactos/{correo electrónico} | Cargar Contacto |
+| [**ContactosByEmailPut**](ContactosApi.md#contactsbyemailput) | **PONER** /contactos/{correo electrónico} | Actualizar contacto |
+| [**ContactsDeletePost**](ContactsApi.md#contactsdeletepost) | **POST** /contactos/eliminar | Eliminar contactos de forma masiva |
+| [**ContactsExportByIdStatusGet**](ContactsApi.md#contactsexportbyidstatusget) | **OBTENER** /contactos/exportar/{id}/status | Verificar estado de exportación |
+| [**ContactsExportPost**](ContactsApi.md#contactsexportpost) | **POST** /contactos/exportar | Exportar contactos |
+| [**ContactosGet**](ContactosApi.md#contactsget) | **OBTENER** /contactos | Cargar contactos |
+| [**ContactsImportPost**](ContactsApi.md#contactsimportpost) | **POST** /contactos/importar | Cargar contactos |
+| [**Publicación de contactos**](ContactosApi.md#publicación de contactos) | **POST** /contactos | Agregar contacto |
 
 <a name="contactsbyemaildelete"></a>
-# **ContactsByEmailDelete**
-> void ContactsByEmailDelete (string email)
+# **ContactosPorEmailEliminar**
+> anular ContactsByEmailDelete (cadena de correo electrónico)
 
-Delete Contact
+Borrar contacto
 
-Deletes the provided contact. Required Access Level: ModifyContacts
+Elimina el contacto proporcionado. Nivel de acceso requerido: Modificar contactos
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -62,8 +62,8 @@ namespace Example
 }
 ```
 
-#### Using the ContactsByEmailDeleteWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Uso de la variante ContactsByEmailDeleteWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -79,42 +79,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **email** | **string** | Proper email address. |  |
+| **correo electrónico** | **cadena** | Dirección de correo electrónico adecuada. | |
 
-### Return type
+### Tipo de devolución
 
-void (empty response body)
+void (cuerpo de respuesta vacío)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+  - **Tipo de contenido**: No definido
+  - **Aceptar**: No definido
 
-
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **200** | OK |  -  |
+| **200** | Aceptar | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
 <a name="contactsbyemailget"></a>
-# **ContactsByEmailGet**
-> Contact ContactsByEmailGet (string email)
+# **ContactosPorEmailGet**
+> Contacto ContactsByEmailGet (cadena de correo electrónico)
 
-Load Contact
+Cargar contacto
 
-Load detailed contact information for specified email. Required Access Level: ViewContacts
+Cargue información de contacto detallada para el correo electrónico especificado. Nivel de acceso requerido: Ver contactos
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -155,8 +154,8 @@ namespace Example
 }
 ```
 
-#### Using the ContactsByEmailGetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Uso de la variante ContactsByEmailGetWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -175,42 +174,42 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **email** | **string** | Proper email address. |  |
+| **correo electrónico** | **cadena** | Dirección de correo electrónico adecuada. | |
 
-### Return type
+### Tipo de devolución
 
-[**Contact**](Contact.md)
+[**Contacto**](Contacto.md)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+  - **Tipo de contenido**: No definido
+  - **Aceptar**: aplicación/json
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **200** | OK |  -  |
+| **200** | Aceptar | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
 <a name="contactsbyemailput"></a>
-# **ContactsByEmailPut**
-> Contact ContactsByEmailPut (string email, ContactUpdatePayload contactUpdatePayload)
+# **ContactosPorEmailPut**
+> Contacto ContactsByEmailPut (cadena de correo electrónico, ContactUpdatePayload contactUpdatePayload)
 
-Update Contact
+Actualizar contacto
 
-Update selected contact. Omitted contact's fields will not be changed. Required Access Level: ModifyContacts
+Actualizar contacto seleccionado. Los campos del contacto omitidos no se cambiarán. Nivel de acceso requerido: Modificar contactos
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -252,8 +251,8 @@ namespace Example
 }
 ```
 
-#### Using the ContactsByEmailPutWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Uso de la variante ContactsByEmailPutWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -272,43 +271,43 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **email** | **string** | Proper email address. |  |
-| **contactUpdatePayload** | [**ContactUpdatePayload**](ContactUpdatePayload.md) |  |  |
+| **correo electrónico** | **cadena** | Dirección de correo electrónico adecuada. | |
+| **contactUpdatePayload** | [**ContactUpdatePayload**](ContactUpdatePayload.md) | | |
 
-### Return type
+### Tipo de devolución
 
-[**Contact**](Contact.md)
+[**Contacto**](Contacto.md)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+  - **Tipo de contenido**: aplicación/json
+  - **Aceptar**: aplicación/json
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **200** | OK |  -  |
+| **200** | Aceptar | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
 <a name="contactsdeletepost"></a>
-# **ContactsDeletePost**
-> void ContactsDeletePost (EmailsPayload emailsPayload)
+# **ContactosEliminar publicación**
+> anular ContactosDeletePost (EmailsPayload emailsPayload)
 
-Delete Contacts Bulk
+Eliminar contactos en masa
 
-Deletes provided contacts in bulk. Required Access Level: ModifyContacts
+Elimina los contactos proporcionados de forma masiva. Nivel de acceso requerido: Modificar contactos
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -348,8 +347,8 @@ namespace Example
 }
 ```
 
-#### Using the ContactsDeletePostWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Usando la variante ContactsDeletePostWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -365,42 +364,41 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **emailsPayload** | [**EmailsPayload**](EmailsPayload.md) | Provide either rule or a list of emails, not both. |  |
+| **carga útil de correos electrónicos** | [**Carga útil de correos electrónicos**](Carga útil de correos electrónicos.md) | Proporcione una regla o una lista de correos electrónicos, no ambas. | |
 
-### Return type
+### Tipo de devolución
 
-void (empty response body)
+void (cuerpo de respuesta vacío)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
+  - **Tipo de contenido**: aplicación/json
+  - **Aceptar**: No definido
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **200** | OK |  -  |
+| **200** | Aceptar | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
 <a name="contactsexportbyidstatusget"></a>
-# **ContactsExportByIdStatusGet**
-> ExportStatus ContactsExportByIdStatusGet (string id)
+# **ContactosExportarByIdStatusGet**
+> ExportStatus ContactsExportByIdStatusGet (identificador de cadena)
 
-Check Export Status
+Verificar estado de exportación
 
-Check the current status of the export. Required Access Level: Export
-
-### Example
+Consulta el estado actual de la exportación. Nivel de acceso requerido: Exportar
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -441,8 +439,8 @@ namespace Example
 }
 ```
 
-#### Using the ContactsExportByIdStatusGetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Uso de la variante ContactsExportByIdStatusGetWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -461,42 +459,42 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **id** | **string** | ID of the exported file |  |
+| **identificación** | **cadena** | ID del archivo exportado | |
 
-### Return type
+### Tipo de devolución
 
-[**ExportStatus**](ExportStatus.md)
+[**Estado de exportación**](Estado de exportación.md)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+  - **Tipo de contenido**: No definido
+  - **Aceptar**: aplicación/json
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **200** | OK |  -  |
+| **200** | Aceptar | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
 <a name="contactsexportpost"></a>
-# **ContactsExportPost**
-> ExportLink ContactsExportPost (ExportFileFormats? fileFormat = null, string rule = null, List<string> emails = null, CompressionFormat? compressionFormat = null, string fileName = null)
+# **ContactosExportarPublicar**
+> ExportLink ContactsExportPost (ExportFileFormats? fileFormat = nulo, regla de cadena = nulo, Lista<cadena> correos electrónicos = nulo, CompresiónFormat? compresiónFormat = nulo, cadena nombre de archivo = nulo)
 
-Export Contacts
+Exportar contactos
 
-Request an Export of specified Contacts. Required Access Level: Export
+Solicite una exportación de contactos específicos. Nivel de acceso requerido: Exportar
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -541,8 +539,8 @@ namespace Example
 }
 ```
 
-#### Using the ContactsExportPostWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Usando la variante ContactsExportPostWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -561,46 +559,46 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **fileFormat** | **ExportFileFormats?** | Format of the exported file | [optional]  |
-| **rule** | **string** | Query used for filtering. | [optional]  |
-| **emails** | [**List&lt;string&gt;**](string.md) | Comma delimited list of contact emails | [optional]  |
-| **compressionFormat** | **CompressionFormat?** | FileResponse compression format. None or Zip. | [optional]  |
-| **fileName** | **string** | Name of your file including extension. | [optional]  |
+| **formato de archivo** | **¿Exportar formatos de archivo?** | Formato del archivo exportado | [opcional] |
+| **regla** | **cadena** | Consulta utilizada para el filtrado. | [opcional] |
+| **correos electrónicos** | [**Lista&lt;cadena&gt;**](cadena.md) | Lista delimitada por comas de correos electrónicos de contacto | [opcional] |
+| **formato de compresión** | **¿Formato de compresión?** | Formato de compresión FileResponse. Ninguno o Zip. | [opcional] |
+| **nombre de archivo** | **cadena** | Nombre de su archivo, incluida la extensión. | [opcional] |
 
-### Return type
+### Tipo de devolución
 
-[**ExportLink**](ExportLink.md)
+[**ExportarEnlace**](ExportarEnlace.md)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+  - **Tipo de contenido**: No definido
+  - **Aceptar**: aplicación/json
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **202** | Accepted |  -  |
+| **202** | Aceptado | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
-<a name="contactsget"></a>
-# **ContactsGet**
-> List&lt;Contact&gt; ContactsGet (int? limit = null, int? offset = null)
+<a nombre="contactosget"></a>
+# **ContactosObtener**
+> Lista&lt;Contacto&gt; ContactosGet (int? límite = nulo, int? desplazamiento = nulo)
 
-Load Contacts
+Cargar contactos
 
-Returns a list of contacts. Required Access Level: ViewContacts
+Devuelve una lista de contactos. Nivel de acceso requerido: Ver contactos
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -642,8 +640,8 @@ namespace Example
 }
 ```
 
-#### Using the ContactsGetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Usando la variante ContactsGetWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -662,43 +660,43 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **limit** | **int?** | Maximum number of returned items. | [optional]  |
-| **offset** | **int?** | How many items should be returned ahead. | [optional]  |
+| **límite** | **int?** | Número máximo de artículos devueltos. | [opcional] |
+| **compensación** | **int?** | ¿Cuántos artículos se deben devolver con anticipación? | [opcional] |
 
-### Return type
+### Tipo de devolución
 
-[**List&lt;Contact&gt;**](Contact.md)
+[**Lista&lt;Contacto&gt;**](Contacto.md)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+  - **Tipo de contenido**: No definido
+  - **Aceptar**: aplicación/json
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **200** | OK |  -  |
+| **200** | Aceptar | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
 <a name="contactsimportpost"></a>
-# **ContactsImportPost**
-> void ContactsImportPost (string listName = null, string encodingName = null, string fileUrl = null, System.IO.Stream file = null)
+# **Publicación de importación de contactos**
+> void ContactsImportPost (cadena listName = nulo, cadena encodingName = nulo, cadena fileUrl = nulo, archivo System.IO.Stream = nulo)
 
-Upload Contacts
+Cargar contactos
 
-Upload contacts from a file. Required Access Level: ModifyContacts
+Cargar contactos desde un archivo. Nivel de acceso requerido: Modificar contactos
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -741,8 +739,8 @@ namespace Example
 }
 ```
 
-#### Using the ContactsImportPostWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Usando la variante ContactsImportPostWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -758,45 +756,45 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **listName** | **string** | Name of an existing list to add these contacts to | [optional]  |
-| **encodingName** | **string** | In what encoding the file is uploaded | [optional]  |
-| **fileUrl** | **string** | Optional url of csv to import | [optional]  |
-| **file** | **System.IO.Stream****System.IO.Stream** |  | [optional]  |
+| **nombre de lista** | **cadena** | Nombre de una lista existente a la que agregar estos contactos | [opcional] |
+| **nombrecodificación** | **cadena** | ¿En qué codificación se carga el archivo? [opcional] |
+| **URL de archivo** | **cadena** | URL opcional de csv para importar | [opcional] |
+| **archivo** | **Sistema.IO.Stream****Sistema.IO.Stream** | | [opcional] |
 
-### Return type
+### Tipo de devolución
 
-void (empty response body)
+void (cuerpo de respuesta vacío)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: multipart/form-data
- - **Accept**: Not defined
+  - **Tipo de contenido**: multiparte/datos de formulario
+  - **Aceptar**: No definido
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **202** | Accepted |  -  |
+| **202** | Aceptado | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
 <a name="contactspost"></a>
-# **ContactsPost**
-> List&lt;Contact&gt; ContactsPost (List<ContactPayload> contactPayload, List<string> listnames = null)
+# **Publicar contactos**
+> Lista&lt;Contacto&gt; ContactsPost (List<ContactPayload> contactPayload, List<string> nombres de lista = null)
 
-Add Contact
+Agregar contacto
 
-Add new Contacts to your Lists. Up to 1000 can be added (for more please refer to the import request). Required Access Level: ModifyContacts
+Agregue nuevos contactos a sus listas. Se pueden agregar hasta 1000 (para obtener más información, consulte la solicitud de importación). Nivel de acceso requerido: Modificar contactos
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -838,8 +836,8 @@ namespace Example
 }
 ```
 
-#### Using the ContactsPostWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Usando la variante ContactsPostWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -858,31 +856,30 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **contactPayload** | [**List&lt;ContactPayload&gt;**](ContactPayload.md) |  |  |
-| **listnames** | [**List&lt;string&gt;**](string.md) | Names of lists to which the uploaded contacts should be added to | [optional]  |
+| **carga útil de contacto** | [**Lista&lt;ContactPayload&gt;**](ContactPayload.md) | | |
+| **nombres de lista** | [**Lista&lt;cadena&gt;**](cadena.md) | Nombres de listas a las que se deben agregar los contactos cargados | [opcional] |
 
-### Return type
+### Tipo de devolución
 
-[**List&lt;Contact&gt;**](Contact.md)
+[**Lista&lt;Contacto&gt;**](Contacto.md)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+  - **Tipo de contenido**: aplicación/json
+  - **Aceptar**: aplicación/json
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **200** | OK |  -  |
+| **200** | Aceptar | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)

@@ -1,24 +1,24 @@
-# ElasticEmail.Api.CampaignsApi
+# NeoRed.Api.CampaignsApi
 
-All URIs are relative to *https://api.elasticemail.com/v4*
+Todas las URL son relativas a
 
-| Method | HTTP request | Description |
+| Método | Solicitud HTTP | Descripción |
 |--------|--------------|-------------|
-| [**CampaignsByNameDelete**](CampaignsApi.md#campaignsbynamedelete) | **DELETE** /campaigns/{name} | Delete Campaign |
-| [**CampaignsByNameGet**](CampaignsApi.md#campaignsbynameget) | **GET** /campaigns/{name} | Load Campaign |
-| [**CampaignsByNamePut**](CampaignsApi.md#campaignsbynameput) | **PUT** /campaigns/{name} | Update Campaign |
-| [**CampaignsGet**](CampaignsApi.md#campaignsget) | **GET** /campaigns | Load Campaigns |
-| [**CampaignsPost**](CampaignsApi.md#campaignspost) | **POST** /campaigns | Add Campaign |
+| [**CampaignsByNameDelete**](CampaignsApi.md#campaignsbynamedelete) | **ELIMINAR** /campañas/{nombre} | Eliminar campaña |
+| [**CampaignsByNameGet**](CampaignsApi.md#campaignsbynameget) | **OBTENER** /campañas/{nombre} | Cargar campaña |
+| [**CampaignsByNamePut**](CampaignsApi.md#campaignsbynameput) | **PUT** /campañas/{nombre} | Campaña de actualización |
+| [**CampaignsGet**](CampaignsApi.md#campaignsget) | **OBTENER** /campañas | Cargar campañas |
+| [**CampaignsPost**](CampaignsApi.md#campaignspost) | **POST** /campañas | Agregar campaña |
 
 <a name="campaignsbynamedelete"></a>
-# **CampaignsByNameDelete**
-> void CampaignsByNameDelete (string name)
+# **CampañasPorNombreEliminar**
+> void CampaignsByNameDelete (nombre de cadena)
 
-Delete Campaign
+Eliminar campaña
 
-Delete the specific campaign.  This does not cancel in progress email, see Cancel In Progress. Required Access Level: ModifyCampaigns
+Eliminar la campaña específica. Esto no cancela el correo electrónico en curso; consulte Cancelación en curso. Nivel de acceso requerido: Modificar campañas
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -58,8 +58,8 @@ namespace Example
 }
 ```
 
-#### Using the CampaignsByNameDeleteWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Uso de la variante CampaignsByNameDeleteWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -75,42 +75,42 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **name** | **string** | Name of Campaign to delete |  |
+| **nombre** | **cadena** | Nombre de la campaña a eliminar | |
 
-### Return type
+### Tipo de devolución
 
-void (empty response body)
+void (cuerpo de respuesta vacío)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+  - **Tipo de contenido**: No definido
+  - **Aceptar**: No definido
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **200** | OK |  -  |
+| **200** | Aceptar | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
 <a name="campaignsbynameget"></a>
-# **CampaignsByNameGet**
-> Campaign CampaignsByNameGet (string name)
+# **CampañasPorNombreObtener**
+> Campaña CampaignsByNameGet (nombre de cadena)
 
-Load Campaign
+Cargar campaña
 
-Returns the specified campaign details. Required Access Level: ViewCampaigns
+Devuelve los detalles de la campaña especificada. Nivel de acceso requerido: Ver campañas
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -151,8 +151,8 @@ namespace Example
 }
 ```
 
-#### Using the CampaignsByNameGetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Uso de la variante CampaignsByNameGetWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -171,42 +171,42 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **name** | **string** | Name of Campaign to get |  |
+| **nombre** | **cadena** | Nombre de la campaña a conseguir | |
 
-### Return type
+### Tipo de devolución
 
-[**Campaign**](Campaign.md)
+[**Campaña**](Campaña.md)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+  - **Tipo de contenido**: No definido
+  - **Aceptar**: aplicación/json
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **200** | OK |  -  |
+| **200** | Aceptar | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
 <a name="campaignsbynameput"></a>
-# **CampaignsByNamePut**
-> Campaign CampaignsByNamePut (string name, Campaign campaign)
+# **CampañasPorNombrePut**
+> Campaña CampaignsByNamePut (nombre de cadena, campaña de campaña)
 
-Update Campaign
+Campaña de actualización
 
-Updates a previously added campaign.  Only Active and Paused campaigns can be updated. Required Access Level: ModifyCampaigns
+Actualiza una campaña agregada anteriormente. Sólo se pueden actualizar las campañas activas y en pausa. Nivel de acceso requerido: Modificar campañas
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -248,8 +248,8 @@ namespace Example
 }
 ```
 
-#### Using the CampaignsByNamePutWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Uso de la variante CampaignsByNamePutWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -268,43 +268,43 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **name** | **string** | Name of Campaign to update |  |
-| **campaign** | [**Campaign**](Campaign.md) | JSON representation of a campaign |  |
+| **nombre** | **cadena** | Nombre de la campaña a actualizar | |
+| **campaña** | [**Campaña**](Campaña.md) | Representación JSON de una campaña | |
 
-### Return type
+### Tipo de devolución
 
-[**Campaign**](Campaign.md)
+[**Campaña**](Campaña.md)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+  - **Tipo de contenido**: aplicación/json
+  - **Aceptar**: aplicación/json
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **200** | OK |  -  |
+| **200** | Aceptar | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
 <a name="campaignsget"></a>
-# **CampaignsGet**
-> List&lt;Campaign&gt; CampaignsGet (string search = null, int? offset = null, int? limit = null)
+# **CampañasObtener**
+> Listar&lt;Campaña&gt; CampaignsGet (búsqueda de cadena = nulo, int? offset = nulo, int? límite = nulo)
 
-Load Campaigns
+Cargar campañas
 
-Returns a list all of your campaigns. Limited to 1000 results. Required Access Level: ViewCampaigns
+Devuelve una lista de todas sus campañas. Limitado a 1000 resultados. Nivel de acceso requerido: Ver campañas
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -347,8 +347,8 @@ namespace Example
 }
 ```
 
-#### Using the CampaignsGetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Uso de la variante CampaignsGetWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -367,44 +367,44 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **search** | **string** | Text fragment used for searching in Campaign name (using the &#39;contains&#39; rule) | [optional]  |
-| **offset** | **int?** | How many items should be returned ahead. | [optional]  |
-| **limit** | **int?** | Maximum number of returned items. | [optional]  |
+| **buscar** | **cadena** | Fragmento de texto utilizado para buscar en el nombre de la campaña (usando la regla "contiene") | [opcional] |
+| **compensación** | **int?** | ¿Cuántos artículos se deben devolver con anticipación? | [opcional] |
+| **límite** | **int?** | Número máximo de artículos devueltos. | [opcional] |
 
-### Return type
+### Tipo de devolución
 
-[**List&lt;Campaign&gt;**](Campaign.md)
+[**Lista&lt;Campaña&gt;**](Campaña.md)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+  - **Tipo de contenido**: No definido
+  - **Aceptar**: aplicación/json
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **200** | OK |  -  |
+| **200** | Aceptar | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)
 
-<a name="campaignspost"></a>
-# **CampaignsPost**
-> Campaign CampaignsPost (Campaign campaign)
+<a name="publicación de campaña"></a>
+# **Publicación de campañas**
+> Campaña CampañasPost (Campaña campaña)
 
-Add Campaign
+Agregar campaña
 
-Add a campaign for processing. Required Access Level: ModifyCampaigns
+Agregue una campaña para su procesamiento. Nivel de acceso requerido: Modificar campañas
 
-### Example
+### Ejemplo
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -445,8 +445,8 @@ namespace Example
 }
 ```
 
-#### Using the CampaignsPostWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
+#### Uso de la variante CampaignsPostWithHttpInfo
+Esto devuelve un objeto ApiResponse que contiene los datos de respuesta, el código de estado y los encabezados.
 
 ```csharp
 try
@@ -465,30 +465,29 @@ catch (ApiException e)
 }
 ```
 
-### Parameters
+### Parámetros
 
-| Name | Type | Description | Notes |
+| Nombre | Tipo | Descripción | Notas |
 |------|------|-------------|-------|
-| **campaign** | [**Campaign**](Campaign.md) | JSON representation of a campaign |  |
+| **campaña** | [**Campaña**](Campaña.md) | Representación JSON de una campaña | |
 
-### Return type
+### Tipo de devolución
 
-[**Campaign**](Campaign.md)
+[**Campaña**](Campaña.md)
 
-### Authorization
+### Autorización
 
 [apikey](../README.md#apikey)
 
-### HTTP request headers
+### encabezados de solicitud HTTP
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+  - **Tipo de contenido**: aplicación/json
+  - **Aceptar**: aplicación/json
 
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Detalles de la respuesta HTTP
+| Código de estado | Descripción | Encabezados de respuesta |
 |-------------|-------------|------------------|
-| **201** | Created |  -  |
+| **201** | Creado | - |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Volver al inicio]](#) [[Volver a la lista de API]](../README.md#documentation-for-api-endpoints) [[Volver a la lista de modelos]](../README.md# documentación-para-modelos) [[Volver a README]](../README.md)

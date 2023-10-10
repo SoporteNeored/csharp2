@@ -113,7 +113,7 @@ Todos los URI son relativos
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*CampaignsApi* | [**CampaignsByNameDelete**]([Docs/CampaignsApi.md#campaignsbynamedelete)) | **DELETE** /campaigns/{name} | Delete Campaign
+*CampaignsApi* | [**CampaignsByNameDelete**](Docs/CampaignsApi.md#campaignsbynamedelete) | **DELETE** /campaigns/{name} | Delete Campaign
 *CampaignsApi* | [**CampaignsByNameGet**](Docs/CampaignsApi.md#campaignsbynameget) | **GET** /campaigns/{name} | Load Campaign
 *CampaignsApi* | [**CampaignsByNamePut**](Docs/CampaignsApi.md#campaignsbynameput) | **PUT** /campaigns/{name} | Update Campaign
 *CampaignsApi* | [**CampaignsGet**](Docs/CampaignsApi.md#campaignsget) | **GET** /campaigns | Load Campaigns

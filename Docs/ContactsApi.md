@@ -488,7 +488,7 @@ catch (ApiException e)
 
 <a name="contactsexportpost"></a>
 # **ContactosExportarPublicar**
-> ExportLink ContactsExportPost (ExportFileFormats? fileFormat = nulo, regla de cadena = nulo, Lista<cadena> correos electrónicos = nulo, CompresiónFormat? compresiónFormat = nulo, cadena nombre de archivo = nulo)
+> ExportLink ContactsExportPost (ExportFileFormats? fileFormat = nulo, regla de cadena = nulo, cadena correos electrónicos = nulo, CompresiónFormat? compresiónFormat = nulo, cadena nombre de archivo = nulo)
 
 Exportar contactos
 

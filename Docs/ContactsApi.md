@@ -182,7 +182,7 @@ catch (ApiException e)
 
 ### Tipo de devolución
 
-[**Contacto**](Contacto.md)
+[**Contacto**](Contact.md)
 
 ### Autorización
 
@@ -280,7 +280,7 @@ catch (ApiException e)
 
 ### Tipo de devolución
 
-[**Contacto**](Contacto.md)
+[**Contacto**](Contact.md)
 
 ### Autorización
 
@@ -669,7 +669,7 @@ catch (ApiException e)
 
 ### Tipo de devolución
 
-[**Lista&lt;Contacto&gt;**](Contacto.md)
+[**Lista&lt;Contacto&gt;**](Contact.md)
 
 ### Autorización
 
@@ -865,7 +865,7 @@ catch (ApiException e)
 
 ### Tipo de devolución
 
-[**Lista&lt;Contacto&gt;**](Contacto.md)
+[**Lista&lt;Contacto&gt;**](Contact.md)
 
 ### Autorización
 
